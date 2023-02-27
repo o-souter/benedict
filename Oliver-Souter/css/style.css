@@ -7,7 +7,7 @@
     --borders: 2px;
     --radius-borders:10px;
     --background-colour:#CCCCCC;
-    --primary-colour:#FF8600;
+    --primary-colour:#666666;
     --secondary-colour: #FF2F00;
     --primary-shadow: #A07F5A;
     --secondary-shadow:#B27F48;
@@ -95,17 +95,17 @@ nav a:hover {
     align-items:center;
     justify-content:center;
     gap:2.5rem;
-    max-width: 70rem;
+    max-width: 68.75rem;
     margin:auto;
     padding:var(--page-padding);
 }
 #hero-img {
-    height: 50rem;
-    width: 40rem;
+    height: 30rem;
+    width: 66.66rem;
     border-radius: var(--radius-borders);
 }
 #intro {
-    width: 40rem;
+    width: 25rem;
     padding: 0.7rem;
     border-radius: var(--radius-borders);
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -173,32 +173,39 @@ nav a:hover {
 /*Projects Section */
 
 .projects {
-    max-width: 70rem;
+    background-color: var(--background-colour);
+    padding:32px 0;
+    margin-top:2rem;
+    /*max-width: 70rem;
     margin:auto;
     text-align:center;
-    margin-top: 2.5rem;
+    margin-top: 2.5rem;*/
 }
 .projects #projects-title {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .projects-div {
-    padding:1rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .projects-div i {
-    padding:1.25rem;
+    
+    /*padding:1.25rem;*/
 }
 
 .project-cell {
+    /*
     padding:1rem;
     width:15rem ;
     word-wrap: break-word;
     background-color: var(--background-colour);
-    border-radius: var(--radius-borders);
+    border-radius: var(--radius-borders);*/
 }
-.projects img {
-    width:10rem;
-    height:10rem;
+.project-img {
+    width:70%;
+    height:70%;
     border-radius: var(--radius-borders);
 }
