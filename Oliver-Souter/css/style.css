@@ -1,0 +1,139 @@
+:root {
+    /*Variables*/
+    --font-family: "DM Sans", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --more-bold-font: 900;
+    --borders: 2px;
+    --radius-borders:10px;
+    --background-colour:#CCCCCC;
+    --primary-colour:#FF8600;
+    --secondary-colour: #FF2F00;
+    --primary-shadow: #A07F5A;
+    --secondary-shadow:#B27F48;
+    --bottom-margin:0.5rem;
+    --bottom-margin-other: 1rem;
+    --line-height: 1.7rem;
+    --transition:0.2s;
+    --page-padding: 1rem 5rem;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* General Page CSS */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:var(--font-family);
+}
+
+ul {
+    list-style-type:none;
+}
+a {
+    text-decoration:none;
+    color: var(--primary-colour);
+}
+
+a:hover {
+    color: var(--secondary-colour);
+}
+
+/* Navigation bar CSS */
+nav {
+    position: sticky;
+    display:flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 3.5rem;
+    background-color: var(--background-colour);
+    box-shadow:0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--primary-colour);
+}
+nav ul {
+    display:flex;
+    gap: 1.9rem;
+}
+nav ul li {
+    font-weight: var(--bold-font);
+}
+nav a {
+    color: var(--primary-colour);
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--secondary-colour);
+    border-bottom: 2px solid var(--secondary-colour);
+}
+#hamburger-menu {
+    cursor: pointer;
+    display:none;
+}
+#profile-img {
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    border: var(--borders) solid;
+    border-color: var(--primary-shadow);
+}
+
+/* Hero Section CSS */
+.hero-section {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2.5rem;
+    max-width: 70rem;
+    margin:auto;
+    padding:var(--page-padding);
+}
+#hero-img {
+    height: 50rem;
+    width: 40rem;
+    border-radius: var(--radius-borders);
+}
+#intro {
+    width: 40rem;
+    padding: 0.7rem;
+    border-radius: var(--radius-borders);
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+#intro h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+#intro p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+
+}
+
+/*More about me Section CSS */
+
+#more-about-me {
+    background-color: var(background-color);
+    padding: var(--page-padding);
+}
+
+#more-about-me h2 {
+   margin-bottom: var(--bottom-margin);
+   text-align: center;
+}
+
+#more-about-me p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
