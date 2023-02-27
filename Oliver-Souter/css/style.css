@@ -137,3 +137,68 @@ nav a:hover {
     line-height: var(--line-height);
     padding: 0.4rem;
 }
+
+
+/* Skills section CSS */
+.skills {
+    max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;
+}
+.skills #skills-title {
+    margin-bottom: 1rem;
+}
+.row1 {
+    display:flex;
+    align-items:center;
+}
+.row2 {
+    display:flex;
+    align-items:center;
+}
+.skills-div i {
+    padding:1.25rem;
+}
+
+.icon-skill {
+    font-size: 5rem;
+}
+.skill-cell {
+    margin:auto;
+    float:left;
+    padding: 1.25rem;
+}
+
+/*Projects Section */
+
+.projects {
+    max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;
+}
+.projects #projects-title {
+    margin-bottom: 1rem;
+}
+
+.projects-div {
+    padding:1rem;
+}
+
+.projects-div i {
+    padding:1.25rem;
+}
+
+.project-cell {
+    padding:1rem;
+    width:15rem ;
+    word-wrap: break-word;
+    background-color: var(--background-colour);
+    border-radius: var(--radius-borders);
+}
+.projects img {
+    width:10rem;
+    height:10rem;
+    border-radius: var(--radius-borders);
+}
