@@ -6,17 +6,17 @@
     --more-bold-font: 900;
     --borders: 2px;
     --radius-borders:10px;
-    --background-colour:#CCCCCC;
-    --primary-colour:#666666;
-    --secondary-colour: #FF2F00;
-    --primary-shadow: #A07F5A;
+    --background-colour:#1A124D;
+    --primary-colour:#478ea1;
+    --secondary-colour: #00ff22;
+    --primary-shadow: #ebebeb;
     --secondary-shadow:#B27F48;
+    --text-links:#00ff22;
     --bottom-margin:0.5rem;
     --bottom-margin-other: 1rem;
     --line-height: 1.7rem;
     --transition:0.2s;
     --page-padding: 1rem 5rem;
-    
 }
 
 html {
@@ -38,11 +38,11 @@ ul {
 }
 a {
     text-decoration:none;
-    color: var(--primary-colour);
+    color: var(--text-links);
 }
 
 a:hover {
-    color: var(--secondary-colour);
+    color: var(--background-colour);
 }
 
 /* Navigation bar CSS */
@@ -124,8 +124,12 @@ nav a:hover {
 /*More about me Section CSS */
 
 #more-about-me {
-    background-color: var(background-color);
+    background-color: var(--primary-colour);
     padding: var(--page-padding);
+}
+#more-about-me-div {
+    width: 100%;
+    
 }
 
 #more-about-me h2 {
@@ -149,6 +153,11 @@ nav a:hover {
 .skills #skills-title {
     margin-bottom: 1rem;
 }
+
+#languages-title {
+    padding:2rem;
+}
+
 .row1 {
     display:flex;
     align-items:center;
@@ -164,6 +173,12 @@ nav a:hover {
 .icon-skill {
     font-size: 5rem;
 }
+
+.icon-skill-img {
+    width: 5rem;
+    height: 5rem;
+}
+
 .skill-cell {
     margin:auto;
     float:left;
@@ -173,7 +188,7 @@ nav a:hover {
 /*Projects Section */
 
 .projects {
-    background-color: var(--background-colour);
+    background-color: var(--primary-colour);
     padding:32px 0;
     margin-top:2rem;
     /*max-width: 70rem;
@@ -181,14 +196,22 @@ nav a:hover {
     text-align:center;
     margin-top: 2.5rem;*/
 }
-.projects #projects-title {
+.projects #projects-title, .project-title{
+    text-align: center;
+    font-weight: var(--bold-font);
     /*margin-bottom: 1rem;*/
 }
+
+#project-description {
+    padding:3rem;
+}
+
 
 .projects-div {
     display:flex;
     align-items:center;
     justify-content: center;
+    text-align: center;
 }
 
 .projects-div i {
@@ -197,6 +220,11 @@ nav a:hover {
 }
 
 .project-cell {
+    width:15rem ;
+    word-wrap: break-word;
+    padding:1rem;
+    width:15rem ;
+    word-wrap: break-word;
     /*
     padding:1rem;
     width:15rem ;
@@ -205,7 +233,17 @@ nav a:hover {
     border-radius: var(--radius-borders);*/
 }
 .project-img {
-    width:70%;
-    height:70%;
+    padding:1rem;
+    width:100%;
+    height:100%;
     border-radius: var(--radius-borders);
+    transition:1s ease-out 100ms;
+}
+.project-img:hover {
+    border-radius: 100rem;
+}
+
+/* Contact section CSS*/
+#contactme h2 {
+    text-align: center;
 }

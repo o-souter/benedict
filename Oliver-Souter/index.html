@@ -55,25 +55,27 @@
 
     <!--About me-->
     <section id="more-about-me">
-        <h2>Some more about me</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
-            Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
-            Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc. 
-            Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
-            Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-            Praesent ut massa posuere nisl consequat elementum non ut risus. 
-            Nullam a aliquam sem.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
-            Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
-            Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc.                 Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
-            Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-            Praesent ut massa posuere nisl consequat elementum non ut risus. 
-            Nullam a aliquam sem.
-        </p>    
+        <div id="more-about-me-div">
+            <h2>Some more about me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
+                Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
+                Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc. 
+                Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
+                Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Praesent ut massa posuere nisl consequat elementum non ut risus. 
+                Nullam a aliquam sem.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
+                Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
+                Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc.                 Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
+                Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                Praesent ut massa posuere nisl consequat elementum non ut risus. 
+                Nullam a aliquam sem.
+            </p>  
+        </div>  
     </section>
 
     <!--Skills Section-->
@@ -96,7 +98,10 @@
                     <p>Software</p>
                     <p>Development</p>
                 </div>
-                
+                <div class="skill-cell">
+                    <i class="fa-solid fa-laptop icon-skill"></i>
+                    <p>Tech Support</p>
+                </div>
                 <div class="skill-cell">
                     <i class="fa-solid fa-network-wired icon-skill"></i>
                     <p>Networking</p>
@@ -106,39 +111,54 @@
                     <p>Mobile App</p>
                     <p>Development</p>
                 </div>
+                <div class="skill-cell">
+                    <i class="fa-solid fa-microchip icon-skill"></i>
+                    <p>Internet of</p>
+                    <p>Things (IoT)</p>
+                </div>
             </div>
         </div>
         <h2 id="languages-title">Languages</h2>
         <div class="skills-div">
             <div class="row2 animate__animated animate__pulse">
                 <div class="skill-cell">
-                    <i class="fa-brands fa-html5 icon-skill"></i>
+                    <!--<i class="fa-brands fa-html5 icon-skill"></i>-->
+                    <img class="icon-skill-img" src="./images/html5.png">
                     <p>HTML5</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-brands fa-css3-alt icon-skill"></i>
+                    <!--<i class="fa-brands fa-css3-alt icon-skill"></i>-->
+                    <img class="icon-skill-img" src="./images/css3.png">
                     <p>CSS3</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-brands fa-square-js icon-skill"></i>
+                    <img class="icon-skill-img" src="./images/js.png">
+                    <!--<i class="fa-brands fa-square-js icon-skill"></i>-->
                     <p>Javascript</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-brands fa-java icon-skill"></i>
+                    <!--<i class="fa-brands fa-java icon-skill"></i>-->
+                    <img class="icon-skill-img" src="./images/java.png">
                     <p>Java</p>
                 </div>
                 <div class="skill-cell">
-                    <i class="fa-brands fa-python icon-skill"></i>
+                    <!--<i class="fa-brands fa-python icon-skill"></i>-->
+                    <img class="icon-skill-img" src="./images/python.png">
                     <p>Python</p>
+                </div>
+                <div class="skill-cell">
+                    <!--<i class="fa-solid fa-database icon-skill"></i>-->
+                    <img class="icon-skill-img" src="./images/sql.png">
+                    <p>SQL</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Skills Section-->
+    <!--Projects Section-->
     <section class="projects" id="projects">
-        <h2 id="projects-title">Projects</h2>
-        <p>Some projects I've worked on</p>
+        <h2 id="projects-title">Projects (on GitHub)</h2>
+        <!--<p>Some projects I've worked on</p>-->
         <div class="projects-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="project-cell project-container">
@@ -146,26 +166,46 @@
                         <img class="project-img" src="./images/appicon.png">
                     </a>   
                     <p class="project-title">WhereISSit?</p> 
-                    <p class="project-description">An app which tracks the internation space station</p>
+                    <p class="project-description">A mobile app to track the <a href="https://www.nasa.gov/mission_pages/station/main/index.html">International Space Station</a></a> and meteors using APIs</p>
                 </div>
-                <div class="project-cell">
-                    <p>Ethical</p>
-                    <p>Hacking</p>
+
+                <div class="project-cell project-container">
+                    <a href="https://github.com/o-souter/dadjokebot">
+                        <img class="project-img" src="./images/discord.png">
+                    </a>   
+                    <p class="project-title">dadjokebot</p> 
+                    <p class="project-description">A discord bot that uses <a href="https://icanhazdadjoke.com">icanhazdadjoke.com</a>'s API to tell dad jokes</p>
                 </div>
-                <div class="project-cell">
-                    <p>Software</p>
-                    <p>Development</p>
+
+                <div class="project-cell project-container">
+                    <a href="https://github.com/o-souter/Travel-Beans/tree/main">
+                        <img class="project-img" src="./images/travelbeans.png">
+                    </a>   
+                    <p class="project-title">Travel Beans</p> 
+                    <p class="project-description">A website made for a theoretical Travel Society at RGU</p>
                 </div>
-                
-                <div class="project-cell">
-                    <p>Networking</p>
+
+                <div class="project-cell project-container">
+                    <a href="https://github.com/o-souter/PHIL">
+                        <img class="project-img" src="./images/phil.png">
+                    </a>   
+                    <p class="project-title">P.H.I.L</p> 
+                    <p class="project-description">A prototype smart-home alarm system for the elderly and vulnerable</p>
                 </div>
-                <div class="project-cell">
-                    <p>Mobile App</p>
-                    <p>Development</p>
+
+                <div class="project-cell project-container">
+                    <a href="https://github.com/o-souter/Password-Generator">
+                        <img class="project-img" src="./images/password.png">
+                    </a>   
+                    <p class="project-title">Password Generator</p> 
+                    <p class="project-description">A useful application which generates very secure passwords </p>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="contactme">
+        <h2>Where to find me</h2>
+
     </section>
 
 </body>
