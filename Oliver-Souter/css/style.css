@@ -7,15 +7,15 @@
     --borders: 2px;
     --radius-borders:10px;
     --background-colour:#1A124D;
-    --primary-colour:#478ea1;
+    --primary-colour:#9bd8e9;
     --secondary-colour: #00ff22;
     --primary-shadow: #ebebeb;
     --secondary-shadow:#B27F48;
-    --text-links:#00ff22;
+    --text-links:#007910;
     --bottom-margin:0.5rem;
     --bottom-margin-other: 1rem;
     --line-height: 1.7rem;
-    --transition:0.2s;
+    --transition:0.9s;
     --page-padding: 1rem 5rem;
 }
 
@@ -91,6 +91,7 @@ nav a:hover {
 
 /* Hero Section CSS */
 .hero-section {
+    scroll-margin-top: 150px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -105,11 +106,13 @@ nav a:hover {
     border-radius: var(--radius-borders);
 }
 #intro {
-    width: 25rem;
+    width: rem;
     padding: 0.7rem;
     border-radius: var(--radius-borders);
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
+
+
 
 #intro h2 {
     margin-bottom: var(--bottom-margin);
@@ -124,6 +127,7 @@ nav a:hover {
 /*More about me Section CSS */
 
 #more-about-me {
+    scroll-margin-top: 150px;
     background-color: var(--primary-colour);
     padding: var(--page-padding);
 }
@@ -145,6 +149,7 @@ nav a:hover {
 
 /* Skills section CSS */
 .skills {
+    scroll-margin-top: 150px;
     max-width: 70rem;
     margin:auto;
     text-align:center;
@@ -175,6 +180,7 @@ nav a:hover {
 }
 
 .icon-skill-img {
+    margin:1rem;
     width: 5rem;
     height: 5rem;
 }
@@ -188,6 +194,7 @@ nav a:hover {
 /*Projects Section */
 
 .projects {
+    scroll-margin-top: 150px;
     background-color: var(--primary-colour);
     padding:32px 0;
     margin-top:2rem;
@@ -214,23 +221,15 @@ nav a:hover {
     text-align: center;
 }
 
-.projects-div i {
-    
-    /*padding:1.25rem;*/
-}
-
 .project-cell {
     width:15rem ;
     word-wrap: break-word;
     padding:1rem;
+    margin:5rem;
     width:15rem ;
     word-wrap: break-word;
-    /*
-    padding:1rem;
-    width:15rem ;
-    word-wrap: break-word;
-    background-color: var(--background-colour);
-    border-radius: var(--radius-borders);*/
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius-borders);
 }
 .project-img {
     padding:1rem;
@@ -244,6 +243,126 @@ nav a:hover {
 }
 
 /* Contact section CSS*/
+#contactme {
+    scroll-margin-top: 150px;
+    margin:2rem;
+}
 #contactme h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
+
+
+
+.contact-form-div {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: var(--radius-borders);
+    box-shadow:0 3px 10px var(--secondary-shadow) ;
+}
+
+.input-container label{
+    line-height:2em;
+    font-weight: var(--bold-font);
+    
+}
+.input-container textarea {
+    min-height:6.25rem;
+    font-size:16px;
+    
+}
+
+.inputs {
+    width:100%;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 0.2em solid;
+    transition: var(--transition);
+}
+
+.inputs:focus {
+    border:0.2em solid var(--primary-colour)
+}
+
+
+#button-container {
+    display:flexbox;
+    align-items: center;
+}
+
+#form-button {
+    text-align: center;
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background-color:white;
+    border: 0.2em solid;
+    border-radius:5px;
+    font-weight: var(--bold-font);
+    font-size:16px;
+    transition: var(--transition);
+}
+#form-button:hover {
+    background-color: var(--primary-colour);
+    cursor:pointer;
+}
+
+
+/* Find me section CSS*/
+
+
+#findme {
+    scroll-margin-top: 150px;
+    background-color: var(--primary-colour);
+    padding:32px 0;
+    margin-top:2rem;
+    /*max-width: 70rem;
+    margin:auto;
+    text-align:center;
+    margin-top: 2.5rem;*/
+}
+
+#findme h2 {
+    text-align: center;
+}
+#findme #findme-title{
+    text-align: center;
+    font-weight: var(--bold-font);
+    /*margin-bottom: 1rem;*/
+}
+
+#findme-tag {
+    padding:3rem;
+}
+
+
+.findme-div {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.findme-cell {
+    width:15rem ;
+    word-wrap: break-word;
+    padding:1rem;
+    margin:5rem;
+    width:15rem ;
+    word-wrap: break-word;
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius-borders);
+}
+.findme-img {
+    padding:1rem;
+    width:100%;
+    height:100%;
+    border-radius: var(--radius-borders);
+    transition:1s ease-out 100ms;
+}
+.findme-img:hover {
+    border-radius: 100rem;
+}
+

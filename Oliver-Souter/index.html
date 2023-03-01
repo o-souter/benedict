@@ -29,7 +29,8 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#skills">My skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#contactme">Contact me</a></li>
+            <li><a href="#findme">Where to find me</a></li>
         </ul>
         <button id="hamburger-menu">
             <i class="fa-solid fa-bars"></i>
@@ -39,17 +40,9 @@
     <!-- Hero Section -->
     <section class="hero-section" id="about">
         <img id="hero-img" src="./images/snowboard.jpg" alt="Picture of Oliver" loading="lazy">
-        <div id="intro" class="animate__animated animate__shakeX">
-            <h2 id="intro-title">About me</h2>
-            <p id="intro-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla pharetra ipsum erat, non commodo mauris tincidunt nec. 
-                Cras egestas tempus turpis nec ultrices. Mauris ac nisl erat. 
-                Etiam eget mollis dolor. Nulla sed leo egestas, pretium sapien sed, imperdiet nunc. 
-                Cras sollicitudin gravida dolor, vel condimentum lectus tincidunt eget. 
-                Pellentesque commodo interdum euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                Praesent ut massa posuere nisl consequat elementum non ut risus. 
-                Nullam a aliquam sem.</p>
+        <div id="intro" class="animate__animated animate__pulse">
+            <h2 id="intro-title">Hi, I'm Oliver.</h2>
+            <p id="intro-text">And I'm a programmer who loves to solve problems creatively. I also enjoy snowboarding and baking, constantly seeking out new challenges and ways to grow. Whether I'm typing away at my keyboard or experimenting with new recipes, I'm always pushing myself to learn and explore new things.</p>
         </div>
     </section>
 
@@ -162,7 +155,7 @@
         <div class="projects-div">
             <div class="row1 animate__animated animate__pulse">
                 <div class="project-cell project-container">
-                    <a href="https://github.com/o-souter/Where-ISS-it">
+                    <a target="_blank" href="https://github.com/o-souter/Where-ISS-it">
                         <img class="project-img" src="./images/appicon.png">
                     </a>   
                     <p class="project-title">WhereISSit?</p> 
@@ -170,7 +163,7 @@
                 </div>
 
                 <div class="project-cell project-container">
-                    <a href="https://github.com/o-souter/dadjokebot">
+                    <a target="_blank" href="https://github.com/o-souter/dadjokebot">
                         <img class="project-img" src="./images/discord.png">
                     </a>   
                     <p class="project-title">dadjokebot</p> 
@@ -178,7 +171,7 @@
                 </div>
 
                 <div class="project-cell project-container">
-                    <a href="https://github.com/o-souter/Travel-Beans/tree/main">
+                    <a target="_blank" href="https://github.com/o-souter/Travel-Beans/tree/main">
                         <img class="project-img" src="./images/travelbeans.png">
                     </a>   
                     <p class="project-title">Travel Beans</p> 
@@ -186,7 +179,7 @@
                 </div>
 
                 <div class="project-cell project-container">
-                    <a href="https://github.com/o-souter/PHIL">
+                    <a target="_blank" href="https://github.com/o-souter/PHIL">
                         <img class="project-img" src="./images/phil.png">
                     </a>   
                     <p class="project-title">P.H.I.L</p> 
@@ -194,7 +187,7 @@
                 </div>
 
                 <div class="project-cell project-container">
-                    <a href="https://github.com/o-souter/Password-Generator">
+                    <a target="_blank" href="https://github.com/o-souter/Password-Generator">
                         <img class="project-img" src="./images/password.png">
                     </a>   
                     <p class="project-title">Password Generator</p> 
@@ -204,8 +197,55 @@
         </div>
     </section>
     <section id="contactme">
-        <h2>Where to find me</h2>
+        <h2>Contact me</h2>
+        <div class="contact-form-div">
+            <div class="form">
+                <form method="post" action="https://formspree.io/f/mdovzgry">
+                    <div class="input-container">
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Enter name here..." id="name" name="name" class="inputs" required/>
+                    </div>
 
+                    <div class="input-container">
+                        <label for="email">Email Address:</label>
+                        <input type="email" placeholder="Enter your email address here..." id="email" name="email" class="inputs" required/>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="message">Your message:</label>
+                        <textarea id="message" cols="80" rows="10" name="message" placeholder="Enter your message here..." class="inputs" required></textarea>
+                    </div>
+                    <div id="button-container">
+                        <input type="submit" value="Submit" id="form-button"></input>
+                    </div>
+                    </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="findme">
+        <h2>Where to find me</h2>
+        <div class="findme-div">
+            <div class="row1 animate__animated animate__pulse">
+                <div class="findme-cell findme-container">
+                    <a target="_blank" href="https://www.linkedin.com/in/oliver-souter2002/">
+                        <img class="findme-img" src="./images/linkedin.png">
+                    </a>   
+                    <p class="findme-title">LinkedIn</p> 
+                    <p class="findme-tag"><a href="https://www.linkedin.com/in/oliver-souter2002/">@oliver-souter2002</a></p>
+                </div>
+
+                <div class="findme-cell findme-container">
+                    <a target="_blank" href="https://github.com/o-souter">
+                        <img class="findme-img" src="./images/github.png">
+                    </a>   
+                    <p class="findme-title">GitHub</p> 
+                    <p class="findme-tag"><a href="https://github.com/o-souter">@o-souter</a></p>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
