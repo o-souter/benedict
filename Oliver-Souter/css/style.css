@@ -31,6 +31,14 @@ html {
 
 body {
     font-family:var(--font-family);
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: var(--primary-colour);
+    text-align: center;
+    color:var(--background-colour);
+    padding:2rem;
 }
 
 ul {
@@ -366,3 +374,34 @@ nav a:hover {
     border-radius: 100rem;
 }
 
+/* Mobile Responsivity*/
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    #profile-img {
+        display: none;
+    }
+    nav ul {
+        position:fixed;
+        background-color: var(--background-colour);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5 ease-in;
+    }
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin:8px;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
