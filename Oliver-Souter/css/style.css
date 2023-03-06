@@ -174,10 +174,14 @@ nav a:hover {
 .row1 {
     display:flex;
     align-items:center;
+    flex-wrap:wrap;
+    flex-direction: row;
 }
 .row2 {
     display:flex;
     align-items:center;
+    flex-wrap:wrap;
+    flex-direction: row;
 }
 .skills-div i {
     padding:1.25rem;
