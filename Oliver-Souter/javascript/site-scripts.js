@@ -6,12 +6,14 @@ const navbarlist = document.querySelector("nav ul");
 const links = document.querySelector("nav-link")
 
 
-menu.addEventListener("click", ()=> {
-    navbarlist.classList.toggle("show");
-});
+menu.addEventListener("click", showMenu())
 
-links.forEach((link) => 
+
+function showMenu() {
+    navbarcontainer.style.display = "block";
+    links.forEach((link) => 
     link.addEventListener("click", () => {
         navbarlist.classList.remove("show");
     })
 )
+}
