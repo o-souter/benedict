@@ -384,6 +384,7 @@ nav a:hover {
 
 /* Mobile Responsivity*/
 @media screen and (max-width: 720px) {
+    /* Navigation menu */
     nav {
         padding: 1.5rem 1rem;
     }
@@ -410,6 +411,25 @@ nav a:hover {
     }
 
     #hamburger-menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hero menu */
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        margin-top: -4rem;
+    }
+    #hero-img {
+        padding:1.5rem 1rem;
+        width:26rem;
+        height: 20rem;
+    }
+
+    #intro-text {
+        width:20rem;
     }
 }
