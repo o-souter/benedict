@@ -379,7 +379,8 @@ nav a:hover {
     width:15rem ;
     word-wrap: break-word;
     padding:1rem;
-    margin:5rem;
+    margin:auto;
+    margin-top:2rem;
     width:15rem ;
     word-wrap: break-word;
     background-color: var(--primary-shadow);
