@@ -396,12 +396,26 @@ nav a:hover {
     border-radius: 100rem;
 }
 
-/* Mobile Responsivity*/
-@media screen and (max-width: 720px) {
-    /* Navigation menu */
-    nav {
-        
+
+/* Slight Web Responsivity for smaller screen sizes*/
+@media screen and (max-width: 1200px) {
+    #hero-img {
+        padding:1.5rem 1rem;
+        width:23.4rem;
+        height: 18rem;
+        border-radius: 2rem;
     }
+
+    #intro-text {
+        margin-top:2rem;
+        height: 12rem;
+    }
+}
+
+
+/* Mobile Responsivity*/
+@media screen and (max-width: 1000px) {
+    /* Navigation menu */
     #profile-img {
         display: none;
     }
