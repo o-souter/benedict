@@ -49,15 +49,12 @@ a {
     color: var(--text-links);
 }
 
-a:hover {
+a:hover:not(#hamburger-menu) {
     color: var(--background-colour);
 }
 
 /* Navigation bar CSS */
 
-#navbar-container-mobile {
-    display: none;
-}
 .nav-link-mobile {
     display: none;
 }
@@ -94,6 +91,7 @@ nav a:hover {
     border-bottom: 2px solid var(--secondary-colour);
 }
 #hamburger-menu {
+    float:right;
     cursor: pointer;
     display:none;
 }
@@ -420,6 +418,23 @@ nav a:hover {
     #profile-img {
         display: none;
     }
+
+    nav {
+        padding:1.5rem 1rem;
+    }
+    #navbar-container {
+        position: sticky;
+        display:flex;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding:1.5rem 3.5rem;
+        background-color: var(--background-colour);
+        box-shadow:0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
     nav ul {
         position:fixed;
         background-color: var(--background-colour);
@@ -441,6 +456,8 @@ nav a:hover {
 
     #hamburger-menu {
         display: block;
+        float:left;
+
     }
     nav ul.show {
         transform: translateX(0);
