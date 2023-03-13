@@ -400,7 +400,6 @@ nav a:hover {
 /* Slight Web Responsivity for smaller screen sizes*/
 @media screen and (max-width: 1200px) {
     #hero-img {
-        padding:1.5rem 1rem;
         width:23.4rem;
         height: 18rem;
         border-radius: 2rem;
@@ -411,6 +410,12 @@ nav a:hover {
     #intro-text {
         margin-top:2rem;
         height: 12rem;
+    }
+
+    #more-about-me-div {
+        padding-left:0rem;
+        padding-right:0rem;
+        
     }
 }
 
@@ -426,16 +431,14 @@ nav a:hover {
         padding:1.5rem 1rem;
     }
     #navbar-container {
-        position: sticky;
-        display:flex;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        align-items: center;
-        justify-content: space-between;
-        padding:1.5rem 3.5rem;
+        display:block;
+        padding:1rem 0.75rem;
         background-color: var(--background-colour);
         box-shadow:0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-container h1 {
+        text-align: center;
     }
 
     nav ul {
