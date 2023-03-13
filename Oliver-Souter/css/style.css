@@ -37,7 +37,7 @@ body {
 footer {
     background-color: var(--primary-colour);
     text-align: center;
-    color:var(--secondary-colour);
+    color:var(--background-colour);
     padding:2rem;
 }
 
@@ -127,7 +127,6 @@ nav a:hover {
     border-radius: var(--radius-borders);
 }
 #intro {
-    width: rem;
     padding: 0.7rem;
     border-radius: var(--radius-borders);
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -154,6 +153,8 @@ nav a:hover {
 }
 #more-about-me-div {
     width: 100%;
+    padding-left:8rem;
+    padding-right:8rem;
     
 }
 
@@ -404,7 +405,9 @@ nav a:hover {
         height: 18rem;
         border-radius: 2rem;
     }
-
+    #intro {
+        padding-bottom:4rem;
+    }
     #intro-text {
         margin-top:2rem;
         height: 12rem;
@@ -482,9 +485,15 @@ nav a:hover {
     #intro-text {
         width:20rem;
     }
+    #intro {
+        padding-bottom:7rem;
+    }
     /* More about me section */
-    #more-about-me {
-        padding:2rem;
+
+    #more-about-me-div {
+        padding-left:0rem;
+        padding-right:0rem;
+        
     }
 
 }
