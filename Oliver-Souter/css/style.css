@@ -37,7 +37,7 @@ body {
 footer {
     background-color: var(--primary-colour);
     text-align: center;
-    color:var(--background-colour);
+    color:var(--secondary-colour);
     padding:2rem;
 }
 
@@ -49,8 +49,8 @@ a {
     color: var(--text-links);
 }
 
-a:hover:not(#hamburger-menu) {
-    color: var(--background-colour);
+a:not(#hamburger-menu):hover {
+    color: var(--secondary-colour);
 }
 
 /* Navigation bar CSS */
