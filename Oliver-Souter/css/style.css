@@ -504,11 +504,12 @@ nav a:hover {
     }
 
     #intro-text {
-        text-align: center;
-        width:80%;
+        text-align: left;
+        width:100%;
     }
     #intro {
         padding-bottom:0rem;
+        width:120%;
     }
     #intro p { 
         padding: 0rem 0;
