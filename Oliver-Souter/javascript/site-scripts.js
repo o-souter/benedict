@@ -1,9 +1,7 @@
+//Initialising variables
 const html = document.getElementsByTagName('html')[0];
 var mode = 'light';
 const sunMoon = document.getElementById('sunMoon');
-//sun.style.display = "none";
-//const moon = document.getElementById('moon');
-//moon.style.display = "none";
 const lightDarkToggle = document.getElementById('lightDarkToggle');
 const introText = document.getElementById('intro-text');
 const introTitle = document.getElementById('intro-title');
@@ -26,9 +24,10 @@ const contactTxt = document.getElementsByClassName('contact-text')
 const contactInputs = document.getElementsByClassName('inputs');
 const findme = document.getElementById('findme')
 const findmeCells = document.getElementsByClassName("findme-cell")
+const footer = document.getElementsByTagName('footer')[0]
+const allFooter = document.getElementById('footer')
 
 //Hamburger menu scripts
-
 const hamburgermenu = document.getElementById("hamburger-menu");
 const navbarlist = document.querySelector("nav ul");
 const navbarcontainer = document.querySelector("nav")
@@ -48,18 +47,15 @@ function hideMenu() {
     }
 }
 
-function toggleLightDarkMode() {
-    console.log("testing...")
-    if (mode == 'light') {
-        mode = 'dark';
+function toggleLightDarkMode() {//Toggle Light/Dark mode function
+    if (mode == 'light') { //Dark mode code
+        mode = 'dark'; 
         sunMoon.classList.add("fa-regular");
         sunMoon.classList.remove("fa-solid");
         html.style.backgroundColor = "#0e0833";
         for (const el of hyperlinks) {
             if (el.className != 'nav-link' && el.id != 'hamburger-menu') {el.style.color = "#00ff22"}
         }
-
-        //hyperlinks.forEach().style.color = "#00ff22"
         introText.style.color = "white";
         introTitle.style.color = "white";
         intro.style.boxShadow = "none";
@@ -85,9 +81,12 @@ function toggleLightDarkMode() {
         findme.style.backgroundColor = "#464682"
         findme.style.color = "white"
         for (const el of findmeCells) {el.style.backgroundColor = "#545252"}
+        footer.style.color = "white"
+        footer.style.backgroundColor = "#0e0833"
+    
     }
     
-    else if (mode == 'dark') {
+    else if (mode == 'dark') {//Light Mode code
         mode = 'light'
         sunMoon.classList.remove("fa-regular");
         sunMoon.classList.add("fa-solid");
@@ -120,28 +119,7 @@ function toggleLightDarkMode() {
         findme.style.backgroundColor = "#9bd8e9"
         findme.style.color = "black"
         for (const el of findmeCells) {el.style.backgroundColor = "#ebebeb"}
-
+        footer.style.color = "black"
+        footer.style.backgroundColor = "var(--primary-colour)"
     }
-
-    
-
-
-    // if (mode == 'dark') {mode = 'light';}
-    // else if (mode == 'light') {mode = 'dark';}
-
-    // html.dataset.theme = mode;
-    // console.log("Switching mode")
-    // console.log(mode);  
 }
-
-
-
-/*
-const toggleLightDarkMode = (mode) => {
-    if (mode == 'dark') {mode = 'light';}
-    else if (mode == 'light') {mode = 'dark';}
-
-    console.log("switching mode");
-    console.log(mode)
-    html.dataset.theme = mode;
-}*/
