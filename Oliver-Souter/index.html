@@ -37,6 +37,10 @@
             <li><a class="nav-link" onclick="hideMenu()" href="#projects">Projects</a></li>
             <li><a class="nav-link" onclick="hideMenu()" href="#contactme">Contact me</a></li>
             <li><a class="nav-link" onclick="hideMenu()" href="#findme">Where to find me</a></li>
+            <li><a id="lightDarkToggle" class="nav-link" onclick="toggleLightDarkMode('toggle')">
+                <i id = "sunMoon" class="fa-solid fa-sun fa-lg"></i>
+                <!--<i id = "moon" class="fa-regular fa-sun"></i>-->
+            </a></li>
         </ul>
     </nav>
     <!-- Hero Section -->
@@ -47,20 +51,19 @@
             <p id="intro-text">And I'm a fourth year <a target="_blank" href="https://www.rgu.ac.uk/study/courses/1830-msci-computing-science">Computing Science (MSci)</a> student at <a target="_blank" href="https://www.rgu.ac.uk/">Robert Gordon University</a> who loves to solve problems creatively.
                 I've gained experience in the industry of technical support and have utilised many different programming languages. 
                 I'm always pushing myself to learn new things and find new ways to solve problems in the world around me.
-                
             </p>
         </div>
     </section>
     <!--About me-->
     <section id="more-about-me">
         <div id="more-about-me-div">
-            <h2>Some more about me</h2>
-            <p>
+            <h2 id="more-about-me-title">Some more about me</h2>
+            <p class="more-about-me-txt">
                 As a programmer I've built <a href="#projects"> apps, websites and programs</a>, and am proficient at working solo, 
                 and as part of a team. I've also had the opportunity to gain real world work experience as a Temporary Trainee Engineer with <a target="_blank" href="https://www.mjdsystems.co.uk/">MJD Systems</a>, a Cyber Security 
                 and Tech Consultancy company based in <a target="_blank" href="https://www.google.com/maps/place/Moray/"> Moray</a>. Here I sharpened my skills in Customer Service, Computer Repair and Teamwork.
             </p>
-            <p>
+            <p class="more-about-me-txt">
                 Studying at Robert Gordon University has been an incredibly valuable experience, and has 
                 helped me to improve my Communication, Problem Solving and Teamwork skills, working in many large projects with a variety of other students. 
                 A highlight of my time at Robert Gordon University has been participating in the yearly hackathon, 
