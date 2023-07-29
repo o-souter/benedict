@@ -8,7 +8,7 @@
     --radius-borders:10px;
     --background-colour:#1A124D;
     --primary-colour:#9bd8e9;
-    --secondary-colour: #00ff22;
+    --secondary-colour: #49cc58;
     --primary-shadow: #ebebeb;
     --secondary-shadow:#B27F48;
     --text-links:#007910;
@@ -27,6 +27,10 @@ html {
 html * {
     transition: 1s;
 }
+
+/* html * :hover {
+    color:var(--text-links);
+} */
 
 /* General Page CSS */
 * {
@@ -53,11 +57,17 @@ ul {
 a {
     text-decoration:none;
     color: var(--text-links);
+    
+}
+.hoverable:hover, a:not(.nohover):hover {
+    color: var(--secondary-colour);
+    border-bottom: 2px solid var(--secondary-colour);
 }
 
-a:not(#hamburger-menu):hover {
+/* a:not(#hamburger-menu):hover {
     color: var(--secondary-colour);
-}
+    
+} */
 
 /* Navigation bar CSS */
 
@@ -92,10 +102,10 @@ nav a {
     color: var(--primary-colour);
     transition: var(--transition);
 }
-nav a:hover {
+/* nav a:hover {
     color: var(--secondary-colour);
     border-bottom: 2px solid var(--secondary-colour);
-}
+} */
 #hamburger-menu {
     float:right;
     cursor: pointer;
@@ -228,6 +238,12 @@ nav a:hover {
     margin:auto;
     float:left;
     padding: 1.25rem;
+    top:0px;
+    transition: 1s ease-in-out;
+}
+
+.skill-cell:hover {
+    transform: translate(0px, 10px);
 }
 
 /*Projects Section */

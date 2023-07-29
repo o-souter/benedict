@@ -83,7 +83,7 @@ function setDarkMode() {
     contactMe.style.boxShadow = "none"
     for (const el of contactTxt) {el.style.color = "white"}
     for (const el of contactInputs) {
-        el.style.border = "5px solid white"
+        el.style.border = "solid white"
         el.style.backgroundColor = "#0e0833"
         el.style.color = "white"
     }
@@ -122,7 +122,7 @@ function setLightMode() {
     contactMe.style.boxShadow = "0 3px 10px var(--secondary-shadow)"
     for (const el of contactTxt) {el.style.color = "black"}
     for (const el of contactInputs) {
-        el.style.border = "5px solid black"
+        el.style.border = "solid black"
         el.style.backgroundColor = "white"
         el.style.color = "black"
     }
